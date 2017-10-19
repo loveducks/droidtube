@@ -11,6 +11,7 @@ class Video extends Component{
                 type: 'video',
                 q: null,
                 key: this.props.API_KEY,
+                regionCode: 'US'
             },
             videos: [ ]
         }
@@ -43,9 +44,9 @@ class Video extends Component{
             type: 'video',
             q: evt.target.value,
             key: this.props.API_KEY,
+            regionCode: 'US'
             }
-            }
-        )
+        })
     }
 
     render(){
