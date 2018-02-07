@@ -49,17 +49,23 @@ class Video extends Component{
         })
     }
 
+    handleSubmit(event){
+        event.preventDefault();
+        this.fetchApi();
+    }
+
     render(){
         return(
-            <div className="video">
+            <form className="video" onSubmit={this.handleSubmit.bind(this)}>
                 <input onChange={this.getSearch.bind(this)} placeholder="search" />
-                <button onClick={this.fetchApi.bind(this)}> Go </button>
+                {/*<button onClick={this.fetchApi.bind(this)}> Go </button> */}
+                <input type='submit' value='Go.' />
                 {
                     this.state.videos.map( video => 
                         <VideoList video={video} key={video.id} title={video.title}/>
                      )
                 }
-            </div>
+            </form>
         )
     }
 }

@@ -47,7 +47,7 @@ span{
     position: relative;
 }
 
-button{
+input[type="submit"]{
     width: 60px;
     border: none;
     color: white;

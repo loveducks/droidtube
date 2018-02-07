@@ -7,8 +7,8 @@ const VideoList = (props) => {
             <span>{title}</span>
             <iframe id="ytplayer" type="text/html" 
             src={ 'https://www.youtube.com/embed/' + video.id + '?autoplay=0&showinfo=0'}
-            frameborder="0"
-            allowfullscreen="allowfullscreen"
+            frameBorder="0"
+            allowFullScreen="allowfullscreen"
             mozallowfullscreen="mozallowfullscreen" 
             msallowfullscreen="msallowfullscreen" 
             oallowfullscreen="oallowfullscreen" 
