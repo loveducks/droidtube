@@ -4,7 +4,7 @@ import './App.css';
 import 'whatwg-fetch';
 import Video from './Video';
 
-const API_KEY = 'AIzaSyBtXZ5J6xGnQAmInY5BJB3GCylP4xjBv80';
+const API_KEY = 'AIzaSyDt15F1He8H3V868vtc1ynbD0Yqzzr7AtM';
 const SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
 
 class App extends Component {
